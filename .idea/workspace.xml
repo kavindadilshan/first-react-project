@@ -10,9 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4af23de0-9d6e-498f-b27d-e98c2230beb2" name="Default Changelist" comment="Working with props">
+    <list default="true" id="4af23de0-9d6e-498f-b27d-e98c2230beb2" name="Default Changelist" comment="Understanding the Children Property">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person/Person.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Person.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615794845247</updated>
-      <workItem from="1615794850118" duration="5592000" />
+      <workItem from="1615794850118" duration="6182000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1615798129868</created>
@@ -124,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615800410170</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Understanding the Children Property">
+      <created>1615800649035</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615800649035</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +155,8 @@
     <MESSAGE value="Creating a Functional Component" />
     <MESSAGE value="Outputting Dynamic Content" />
     <MESSAGE value="Working with props" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working with props" />
+    <MESSAGE value="Understanding the Children Property" />
+    <option name="LAST_COMMIT_MESSAGE" value="Understanding the Children Property" />
   </component>
   <component name="WindowStateProjectService">
     <state x="520" y="236" key="#Notifications" timestamp="1615797993363">
@@ -167,10 +175,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="413" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615795577699" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1615800411510">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1615800650970">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615800411510" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615800650970" />
     <state x="534" y="146" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1615797101306">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
