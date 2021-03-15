@@ -7,6 +7,8 @@ function App() {
     <div className="App">
       <h1>Hi! React</h1>
         <Person/>
+        <Person/>
+        <Person/>
     </div>
   );
   // return  React.createElement('div',null,React.createElement('h1',null,'work'))
