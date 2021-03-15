@@ -24,6 +24,7 @@ class App extends Component{
         const persons = this.state.personList;
         persons.splice(selectedIndex,1);
         this.setState({personList:persons})
+        console.log(this.state.personList)
     }
 
     render() {
