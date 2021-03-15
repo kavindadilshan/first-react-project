@@ -20,9 +20,12 @@ class App extends Component{
         })
     }
     render() {
+        const style={
+            backgroundColor:'yellow'
+        }
         return (
             <div className="App">
-                <h1>Hi! React</h1>
+                <h1 style={style}>Hi! React</h1>
                 <Person name={this.state.personList[0].name} age={this.state.personList[0].age} onChange={this.onNameChange}/>
                 <Person name={this.state.personList[1].name} age={this.state.personList[1].age}>My Hobbies:racing</Person>
                 <Person name={this.state.personList[2].name} age={this.state.personList[2].age}/>
