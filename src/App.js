@@ -19,12 +19,19 @@ class App extends Component{
             ]
         })
     }
+
+    onDeleteHandler=(selectedIndex)=>{
+        const persons = this.state.personList;
+        persons.splice(selectedIndex,1);
+        this.setState({personList:persons})
+    }
+
     render() {
         const style={
             backgroundColor:'yellow'
         }
         const list = this.state.personList.map((items,i)=>(
-            <Person name={items.name} age={items.age} key={i}/>
+            <Person name={items.name} age={items.age} key={i} onClick={()=>this.onDeleteHandler(i)}/>
         ))
         return (
             <div className="App">
