@@ -10,9 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4af23de0-9d6e-498f-b27d-e98c2230beb2" name="Default Changelist" comment="state handling">
+    <list default="true" id="4af23de0-9d6e-498f-b27d-e98c2230beb2" name="Default Changelist" comment="Adding Two Way Binding">
+      <change afterPath="$PROJECT_DIR$/src/Person/Person.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Person/Person.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Person.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -50,6 +51,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -81,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615794845247</updated>
-      <workItem from="1615794850118" duration="7811000" />
+      <workItem from="1615794850118" duration="9338000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1615798129868</created>
@@ -139,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615801221347</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Adding Two Way Binding">
+      <created>1615806110826</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615806110826</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +174,8 @@
     <MESSAGE value="Working with props" />
     <MESSAGE value="Understanding the Children Property" />
     <MESSAGE value="state handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="state handling" />
+    <MESSAGE value="Adding Two Way Binding" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Two Way Binding" />
   </component>
   <component name="WindowStateProjectService">
     <state x="520" y="236" key="#Notifications" timestamp="1615797993363">
@@ -184,10 +194,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="413" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615795577699" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1615801222694">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1615806113337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615801222694" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615806113337" />
     <state x="534" y="146" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1615797101306">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
