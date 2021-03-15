@@ -23,12 +23,16 @@ class App extends Component{
         const style={
             backgroundColor:'yellow'
         }
+        const list = this.state.personList.map((items,i)=>(
+            <Person name={items.name} age={items.age} key={i}/>
+        ))
         return (
             <div className="App">
                 <h1 style={style}>Hi! React</h1>
-                <Person name={this.state.personList[0].name} age={this.state.personList[0].age} onChange={this.onNameChange}/>
-                <Person name={this.state.personList[1].name} age={this.state.personList[1].age}>My Hobbies:racing</Person>
-                <Person name={this.state.personList[2].name} age={this.state.personList[2].age}/>
+                {/*<Person name={this.state.personList[0].name} age={this.state.personList[0].age} onChange={this.onNameChange}/>*/}
+                {/*<Person name={this.state.personList[1].name} age={this.state.personList[1].age}>My Hobbies:racing</Person>*/}
+                {/*<Person name={this.state.personList[2].name} age={this.state.personList[2].age}/>*/}
+                {list}
             </div>
         );
     }
