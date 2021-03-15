@@ -5,19 +5,27 @@ import Person from './Person/Person';
 class App extends Component{
     state={
         personList:[
-            {name:'kavinda',age:'24'},
-            {name:'dilshan',age:'56'},
-            {name:'nilu',age:'24'}
+            {id:0,name:'kavinda',age:'24'},
+            {id:1,name:'dilshan',age:'56'},
+            {id:2,name:'nilu',age:'24'}
         ]
     };
-    onNameChange=(event)=>{
-        this.setState({
-            personList:[
-                {name:event.target.value,age:'24'},
-                {name:'dilshan',age:'56'},
-                {name:'nilu',age:'24'}
-            ]
-        })
+
+
+    onNameChange=(event,id)=>{
+        const personIndex=this.state.personList.findIndex(p=>{
+            return p.id === id
+        });
+
+        const person = {...this.state.personList[personIndex]}; // create object
+
+        // const person = Object.assign({},this.state.personList[personIndex])  // create object
+
+        person.name = event.target.value;
+        const persons =[...this.state.personList];
+        persons[personIndex] = person
+
+        this.setState({personList:persons})
     }
 
     onDeleteHandler=(selectedIndex)=>{
@@ -32,7 +40,13 @@ class App extends Component{
             backgroundColor:'yellow'
         }
         const list = this.state.personList.map((items,i)=>(
-            <Person name={items.name} age={items.age} key={i} onClick={()=>this.onDeleteHandler(i)}/>
+            <Person
+                name={items.name}
+                age={items.age}
+                key={i}
+                onClick={()=>this.onDeleteHandler(i)}
+                onChange={(event)=>this.onNameChange(event,items.id)}
+            />
         ))
         return (
             <div className="App">
