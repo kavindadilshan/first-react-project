@@ -9,12 +9,21 @@ class App extends Component{
             {name:'dilshan',age:'56'},
             {name:'nilu',age:'24'}
         ]
+    };
+    onNameChange=(event)=>{
+        this.setState({
+            personList:[
+                {name:event.target.value,age:'24'},
+                {name:'dilshan',age:'56'},
+                {name:'nilu',age:'24'}
+            ]
+        })
     }
     render() {
         return (
             <div className="App">
                 <h1>Hi! React</h1>
-                <Person name={this.state.personList[0].name} age={this.state.personList[0].age}/>
+                <Person name={this.state.personList[0].name} age={this.state.personList[0].age} onChange={this.onNameChange}/>
                 <Person name={this.state.personList[1].name} age={this.state.personList[1].age}>My Hobbies:racing</Person>
                 <Person name={this.state.personList[2].name} age={this.state.personList[2].age}/>
             </div>
