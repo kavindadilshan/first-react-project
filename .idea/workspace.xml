@@ -10,10 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4af23de0-9d6e-498f-b27d-e98c2230beb2" name="Default Changelist" comment="add delete function">
+    <list default="true" id="4af23de0-9d6e-498f-b27d-e98c2230beb2" name="Default Changelist" comment="add list flexibility">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person/Person.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person/Person.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1615794845247</updated>
-      <workItem from="1615794850118" duration="15170000" />
+      <workItem from="1615794850118" duration="16057000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1615798129868</created>
@@ -183,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615820601998</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add list flexibility">
+      <created>1615822414283</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1615822414283</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,7 +220,8 @@
     <MESSAGE value="adding inline styles" />
     <MESSAGE value="outputing list" />
     <MESSAGE value="add delete function" />
-    <option name="LAST_COMMIT_MESSAGE" value="add delete function" />
+    <MESSAGE value="add list flexibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="add list flexibility" />
   </component>
   <component name="WindowStateProjectService">
     <state x="520" y="236" key="#Notifications" timestamp="1615797993363">
@@ -233,10 +240,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="413" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615795577699" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1615820604935">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1615822416002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615820604935" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615822416002" />
     <state x="534" y="146" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1615797101306">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

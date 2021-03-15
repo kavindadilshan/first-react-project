@@ -39,6 +39,16 @@ class App extends Component{
         const style={
             backgroundColor:'yellow'
         }
+        const btnStyle={
+            backgroundColor: 'white',
+            borderRadius:10,
+            padding:10,
+            cursor:'pointer',
+            margin:20
+        }
+
+        btnStyle.backgroundColor='green'
+
         const list = this.state.personList.map((items,i)=>(
             <Person
                 name={items.name}
@@ -51,6 +61,7 @@ class App extends Component{
         return (
             <div className="App">
                 <h1 style={style}>Hi! React</h1>
+                <button style={btnStyle}>Toggle Button</button>
                 {/*<Person name={this.state.personList[0].name} age={this.state.personList[0].age} onChange={this.onNameChange}/>*/}
                 {/*<Person name={this.state.personList[1].name} age={this.state.personList[1].age}>My Hobbies:racing</Person>*/}
                 {/*<Person name={this.state.personList[2].name} age={this.state.personList[2].age}/>*/}
