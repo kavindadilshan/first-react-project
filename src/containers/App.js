@@ -1,6 +1,6 @@
 import Styles from './App.css';
 import React ,{Component}from 'react';
-import Person from './Person/Person';
+import Person from '../components/Persons/Person/Person';
 import Radium from 'radium';
 
 class App extends Component{
