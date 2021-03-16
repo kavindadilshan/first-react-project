@@ -58,9 +58,23 @@ class App extends Component{
                 onChange={(event)=>this.onNameChange(event,items.id)}
             />
         ))
+
+        // const classes=["Color","Font"].join(" ") //bind css classes
+
+        const classes=[];
+
+        if (this.state.personList.length<=2){
+            classes.push("Color")
+        }
+
+        if (this.state.personList.length<=1){
+            classes.push("Font")
+        }
+
+
         return (
             <div className="App">
-                <h1 style={style}>Hi! React</h1>
+                <h1 className={classes.join(" ")}>Hi! React</h1>
                 <button style={btnStyle}>Toggle Button</button>
                 {/*<Person name={this.state.personList[0].name} age={this.state.personList[0].age} onChange={this.onNameChange}/>*/}
                 {/*<Person name={this.state.personList[1].name} age={this.state.personList[1].age}>My Hobbies:racing</Person>*/}
