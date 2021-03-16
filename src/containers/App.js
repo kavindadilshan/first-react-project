@@ -3,6 +3,7 @@ import React ,{Component}from 'react';
 import Persons from '../components/Persons/Persons';
 import Radium from 'radium';
 import Cockpit from "../components/Cockpit/Cockpit";
+import WithClass from "../hoc/WithClass";
 
 class App extends Component{
     state={
@@ -76,7 +77,7 @@ class App extends Component{
 
 
         return (
-            <div className={Styles.App}>
+            <WithClass class={Styles.App}>
                 <Cockpit
                     title={'Hi! React'}
                     personList={this.state.personList}
@@ -86,7 +87,7 @@ class App extends Component{
                 {/*<Person name={this.state.personList[1].name} age={this.state.personList[1].age}>My Hobbies:racing</Person>*/}
                 {/*<Person name={this.state.personList[2].name} age={this.state.personList[2].age}/>*/}
                 {list}
-            </div>
+            </WithClass>
         );
     }
 
