@@ -2,6 +2,7 @@ import Styles from './App.css';
 import React ,{Component}from 'react';
 import Persons from '../components/Persons/Persons';
 import Radium from 'radium';
+import Cockpit from "../components/Cockpit/Cockpit";
 
 class App extends Component{
     state={
@@ -9,7 +10,8 @@ class App extends Component{
             {id:0,name:'kavinda',age:'24'},
             {id:1,name:'dilshan',age:'56'},
             {id:2,name:'nilu',age:'24'}
-        ]
+        ],
+        showList:false
     };
 
 
@@ -36,6 +38,11 @@ class App extends Component{
         console.log(this.state.personList)
     }
 
+    onButtonClickAction=()=>{
+        this.setState({showList:true})
+        console.log('onclick636666666666666666')
+    }
+
     render() {
         const style={
             backgroundColor:'yellow'
@@ -55,31 +62,26 @@ class App extends Component{
         btnStyle.backgroundColor='green'
 
         const list = (
+            this.state.showList?
             <Persons
                 personList={this.state.personList}
                 onClicked={this.onDeleteHandler}
                 onChanged={this.onNameChange}
-            />
+            />:null
         )
 
         // const classes=["Color","Font"].join(" ") //bind css classes
 
-        const classes=[];
 
-        if (this.state.personList.length<=2){
-            classes.push("Color")
-        }
-
-        if (this.state.personList.length<=1){
-            classes.push("Font")
-        }
 
 
         return (
             <div className={Styles.App}>
-                <h1 className={classes.join(" ")}>Hi! React</h1>
-                <button style={btnStyle}>Toggle Button</button>
-                <button className={Styles.AppButton}>Click me</button>
+                <Cockpit
+                    title={'Hi! React'}
+                    personList={this.state.personList}
+                    onPress={this.onButtonClickAction}
+                />
                 {/*<Person name={this.state.personList[0].name} age={this.state.personList[0].age} onChange={this.onNameChange}/>*/}
                 {/*<Person name={this.state.personList[1].name} age={this.state.personList[1].age}>My Hobbies:racing</Person>*/}
                 {/*<Person name={this.state.personList[2].name} age={this.state.personList[2].age}/>*/}
