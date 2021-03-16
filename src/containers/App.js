@@ -1,6 +1,6 @@
 import Styles from './App.css';
 import React ,{Component}from 'react';
-import Person from '../components/Persons/Person/Person';
+import Persons from '../components/Persons/Persons';
 import Radium from 'radium';
 
 class App extends Component{
@@ -54,15 +54,13 @@ class App extends Component{
 
         btnStyle.backgroundColor='green'
 
-        const list = this.state.personList.map((items,i)=>(
-            <Person
-                name={items.name}
-                age={items.age}
-                key={i}
-                onClick={()=>this.onDeleteHandler(i)}
-                onChange={(event)=>this.onNameChange(event,items.id)}
+        const list = (
+            <Persons
+                personList={this.state.personList}
+                onClicked={this.onDeleteHandler}
+                onChanged={this.onNameChange}
             />
-        ))
+        )
 
         // const classes=["Color","Font"].join(" ") //bind css classes
 

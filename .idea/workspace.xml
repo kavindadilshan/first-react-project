@@ -11,13 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4af23de0-9d6e-498f-b27d-e98c2230beb2" name="Default Changelist" comment="set styles change by dynamically">
+      <change afterPath="$PROJECT_DIR$/src/components/Persons/Persons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person/Person.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Persons/Person/Person.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person/Person.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Persons/Person/Person.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Persons/Person/Person.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Persons/Person/Person.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -69,21 +67,6 @@
       <recent name="F:\Ceyentra-Training\Projects\Test Projects\React\my-app\src\components\Persons" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\PCPAL\AppData\Roaming\Subversion</configuration>
@@ -96,7 +79,8 @@
       <option name="presentableId" value="Default" />
       <updated>1615794845247</updated>
       <workItem from="1615794850118" duration="17883000" />
-      <workItem from="1615873626949" duration="11388000" />
+      <workItem from="1615873626949" duration="13848000" />
+      <workItem from="1615899851988" duration="587000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1615798129868</created>
@@ -259,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615895374139</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="change project structure">
+      <created>1615897625810</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1615897625810</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +291,8 @@
     <MESSAGE value="save before ejecting" />
     <MESSAGE value="npm ejected and create css module" />
     <MESSAGE value="add psudo selector in css module" />
-    <option name="LAST_COMMIT_MESSAGE" value="add psudo selector in css module" />
+    <MESSAGE value="change project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="change project structure" />
   </component>
   <component name="WindowStateProjectService">
     <state x="520" y="236" key="#Notifications" timestamp="1615797993363">
@@ -311,10 +303,10 @@
       <screen x="-1920" y="1" width="1920" height="1040" />
     </state>
     <state x="-1506" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824/-1920.1.1920.1040@-1920.1.1920.1040" timestamp="1615873851339" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1615874679562">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1615899797537">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615874679562" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615899797537" />
     <state x="647" y="310" key="Github.ShareDialog" timestamp="1615798054727">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -323,14 +315,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="413" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615795577699" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1615874670586">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1615899895286">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615874670586" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1615895375201">
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615899895286" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1615897627241">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615895375201" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/-1920.1.1920.1040@0.0.1536.824" timestamp="1615897627241" />
     <state x="534" y="146" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1615797101306">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
