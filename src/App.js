@@ -81,6 +81,7 @@ class App extends Component{
             <div className={Styles.App}>
                 <h1 className={classes.join(" ")}>Hi! React</h1>
                 <button style={btnStyle}>Toggle Button</button>
+                <button className={Styles.AppButton}>Click me</button>
                 {/*<Person name={this.state.personList[0].name} age={this.state.personList[0].age} onChange={this.onNameChange}/>*/}
                 {/*<Person name={this.state.personList[1].name} age={this.state.personList[1].age}>My Hobbies:racing</Person>*/}
                 {/*<Person name={this.state.personList[2].name} age={this.state.personList[2].age}/>*/}
