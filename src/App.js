@@ -1,4 +1,4 @@
-import './App.css';
+import Styles from './App.css';
 import React ,{Component}from 'react';
 import Person from './Person/Person';
 import Radium from 'radium';
@@ -78,7 +78,7 @@ class App extends Component{
 
 
         return (
-            <div className="App">
+            <div className={Styles.App}>
                 <h1 className={classes.join(" ")}>Hi! React</h1>
                 <button style={btnStyle}>Toggle Button</button>
                 {/*<Person name={this.state.personList[0].name} age={this.state.personList[0].age} onChange={this.onNameChange}/>*/}
