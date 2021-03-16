@@ -1,6 +1,7 @@
 import './App.css';
 import React ,{Component}from 'react';
 import Person from './Person/Person';
+import Radium from 'radium';
 
 class App extends Component{
     state={
@@ -44,7 +45,11 @@ class App extends Component{
             borderRadius:10,
             padding:10,
             cursor:'pointer',
-            margin:20
+            margin:20,
+            ':hover':{
+                backgroundColor:'blue',
+                color:'white'
+            }
         }
 
         btnStyle.backgroundColor='green'
@@ -88,4 +93,4 @@ class App extends Component{
     // return  React.createElement('div',null,React.createElement('h1',null,'work'))
 }
 
-export default App;
+export default Radium(App);
