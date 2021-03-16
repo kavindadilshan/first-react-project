@@ -8,6 +8,7 @@ class Persons extends Component {
             <Person
                 name={items.name}
                 age={items.age}
+                position={i}
                 key={i}
                 onClick={() => this.props.onClicked(i)}
                 onChange={(event) => this.props.onChanged(event, items.id)}

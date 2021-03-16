@@ -5,12 +5,21 @@ import WithClass from "../../../hoc/WithClass";
 import PropTypes from 'prop-types';
 
 class Person extends Component {
+    componentDidMount() {
+        if (this.props.position===0){
+            this.inputElement.focus();
+        }
+    }
+
     render() {
         return (
             <WithClass class={styles.Person}>
                 <p onClick={this.props.onClick}> I'm a {this.props.name}! I,m {this.props.age} years old</p>
                 <p>{this.props.children}</p>
-                <input type={"text"} onChange={this.props.onChange}/>
+                <input
+                    ref={(inp)=>this.inputElement=inp}
+                    type={"text"}
+                    onChange={this.props.onChange}/>
             </WithClass>
         );
     }
