@@ -1,23 +1,23 @@
 import Styles from './App.css';
-import React ,{Component}from 'react';
+import React, {Component} from 'react';
 import Persons from '../components/Persons/Persons';
 import Radium from 'radium';
 import Cockpit from "../components/Cockpit/Cockpit";
 import WithClass from "../hoc/WithClass";
 
-class App extends Component{
-    state={
-        personList:[
-            {id:0,name:'kavinda',age:'24'},
-            {id:1,name:'dilshan',age:'56'},
-            {id:2,name:'nilu',age:'24'}
+class App extends Component {
+    state = {
+        personList: [
+            {id: 0, name: 'kavinda', age: 24},
+            {id: 1, name: 'dilshan', age: 56},
+            {id: 2, name: 'nilu', age: 24}
         ],
-        showList:false
+        showList: false
     };
 
 
-    onNameChange=(event,id)=>{
-        const personIndex=this.state.personList.findIndex(p=>{
+    onNameChange = (event, id) => {
+        const personIndex = this.state.personList.findIndex(p => {
             return p.id === id
         });
 
@@ -26,54 +26,52 @@ class App extends Component{
         // const person = Object.assign({},this.state.personList[personIndex])  // create object
 
         person.name = event.target.value;
-        const persons =[...this.state.personList];
+        const persons = [...this.state.personList];
         persons[personIndex] = person
 
-        this.setState({personList:persons})
+        this.setState({personList: persons})
     }
 
-    onDeleteHandler=(selectedIndex)=>{
+    onDeleteHandler = (selectedIndex) => {
         const persons = this.state.personList;
-        persons.splice(selectedIndex,1);
-        this.setState({personList:persons})
+        persons.splice(selectedIndex, 1);
+        this.setState({personList: persons})
         console.log(this.state.personList)
     }
 
-    onButtonClickAction=()=>{
-        this.setState({showList:true})
-        console.log('onclick636666666666666666')
+    onButtonClickAction = () => {
+        this.setState({showList: !this.state.showList})
+
     }
 
     render() {
-        const style={
-            backgroundColor:'yellow'
+        const style = {
+            backgroundColor: 'yellow'
         }
-        const btnStyle={
+        const btnStyle = {
             backgroundColor: 'white',
-            borderRadius:10,
-            padding:10,
-            cursor:'pointer',
-            margin:20,
-            ':hover':{
-                backgroundColor:'blue',
-                color:'white'
+            borderRadius: 10,
+            padding: 10,
+            cursor: 'pointer',
+            margin: 20,
+            ':hover': {
+                backgroundColor: 'blue',
+                color: 'white'
             }
         }
 
-        btnStyle.backgroundColor='green'
+        btnStyle.backgroundColor = 'green'
 
         const list = (
-            this.state.showList?
-            <Persons
-                personList={this.state.personList}
-                onClicked={this.onDeleteHandler}
-                onChanged={this.onNameChange}
-            />:null
+            this.state.showList ?
+                <Persons
+                    personList={this.state.personList}
+                    onClicked={this.onDeleteHandler}
+                    onChanged={this.onNameChange}
+                /> : null
         )
 
         // const classes=["Color","Font"].join(" ") //bind css classes
-
-
 
 
         return (
